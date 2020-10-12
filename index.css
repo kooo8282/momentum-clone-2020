@@ -1,0 +1,10 @@
+body {
+  all: unset;
+  margin: 0px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #bdc3c7;
+}
+h1 {
+  font-size: 100px;
+  color: #34495e;
+}
