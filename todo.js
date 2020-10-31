@@ -35,10 +35,14 @@ function handleSubmit(event) {
     paintToDo(currentValue);
     toDoInput.value = "";
 }
-
 function loadToDos(){
     const loadedToDos = localStorage.getItem(TODOS_LS)
-    if(loadedToDos !== null){}
+    if(loadedToDos !== null){
+        const parsedToDos = JSON.parse(loadedToDos)
+        parsedToDos.forEach(function(toDo){
+            paintToDo(toDo.text)}
+            );
+    }
 }
 
 function init() {
